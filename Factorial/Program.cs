@@ -3,10 +3,13 @@
 
 
 int Fact(int num){
-    if(num == 0){
-        return 1;
+    int factorial = 1;
+    int i = 1;
+    while(i <= num){
+        factorial *= i;
+        i++;
     }
-    return num * Fact(num - 1);
+    return factorial;
 }
 
 
